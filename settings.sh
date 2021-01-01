@@ -1,0 +1,2 @@
+#!/bin/bash
+hostnamectl set-hostname mlneko && timedatectl set-timezone Europe/Kiev && localectl set-keymap ru && setfont cyr-sun16 && localectl set-locale LANG="ru_RU.UTF-8" && export LANG=ru_RU.UTF-8 && nano /etc/pacman.conf && useradd -m -g users -G audio,games,lp,optical,power,scanner,storage,video,wheel -s /bin/bash mlneko && passwd mlneko && chfn mlneko && systemctl enable dhcpcd && systemctl start dhcpcd && pacman -Syy && pacman -Syu && pacman -S sudo && nano /etc/sudoers && exit
